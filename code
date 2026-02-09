@@ -1,0 +1,22 @@
+from datetime import datetime, date
+
+def get_days_from_today(date_str: str) -> int:
+    """
+    Повертає кількість днів між заданою датою та поточною датою.
+    
+    :param date_str: дата у форматі 'YYYY-MM-DD'
+    :return: ціле число днів (від'ємне, якщо дата в майбутньому)
+    """
+    try:
+        # Перетворюємо рядок у дату
+        given_date = datetime.strptime(date_str, "%Y-%m-%d").date()
+        
+        # Отримуємо поточну дату (без часу)
+        today = date.today()
+        
+        # Різниця між датами
+        delta = today - given_date
+        return delta.days
+    
+    except ValueError:
+        raise ValueError("Дата повинна бути у форматі 'YYYY-MM-DD'")
