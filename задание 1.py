@@ -1,6 +1,6 @@
+# https://github.com/marinaspinzhar16-ai/python
 from datetime import datetime, date
-
-
+datetime
 
 def get_days_from_today(date_str: str) -> int:
     """
