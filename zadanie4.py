@@ -1,8 +1,5 @@
 from datetime import datetime, date, timedelta
 from typing import List, Dict
-
-
-
 def get_upcoming_birthdays(users: List[Dict[str, str]]) -> List[Dict[str, str]]:
     """
     Повертає список користувачів, яких потрібно привітати
@@ -46,8 +43,6 @@ def get_upcoming_birthdays(users: List[Dict[str, str]]) -> List[Dict[str, str]]:
             })
 
     return upcoming_birthdays
-
-
 
 if __name__ == "__main__":
     users_data = [
