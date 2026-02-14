@@ -30,9 +30,6 @@ def normalize_phone(phone_number: str) -> str:
 
     # Якщо номер без коду (наприклад 501234567) → додаємо '+38'
     return f"+38{digits}"
-
-
-
 if __name__ == "__main__":
     examples = [
         "    +38(050)123-32-34",
@@ -44,8 +41,3 @@ if __name__ == "__main__":
 
     for number in examples:
         print(normalize_phone(number))
-+380501233234
-+380503451234
-+380508889900
-+380501112222
-+380501112211
