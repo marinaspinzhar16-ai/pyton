@@ -1,7 +1,4 @@
 import re
-
-
-
 def normalize_phone(phone_number: str) -> str:
     """
     Нормалізує телефонний номер до формату:
